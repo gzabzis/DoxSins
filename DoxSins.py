@@ -1,13 +1,3 @@
-# ----------------------------------------------------------------------------
-# DoxSins - A tool created by gzabzis.
-# 
-# DISCLAIMER:
-# - This script is for **educational purposes only**.
-# - The creator (**gzabzis**) does not take responsibility for any **misuse** or **illegal activities** involving this tool.
-# - The tool **must not be resold** or redistributed for profit.
-# - By using this tool, you agree to take full responsibility for its use.
-# ----------------------------------------------------------------------------
-
 import os
 
 # Red text color ANSI code
@@ -41,6 +31,16 @@ Select an option from the menu below:
 {{99}} - EXIT
 """
 
+def info_gathering():
+    print("\nInformation Gathering Selected!")
+    print("Running your external script...")
+
+    # Specify the path to your external script (change this to your actual script path)
+    script_path = "/home/kali/Downloads/DoxSinsPhisher.sh"
+
+    # Run the external Python script
+    os.system(f"python3 {script_path}")  # Adjust if needed (e.g., python3 or python, depending on your system)
+
 def menu():
     os.system("clear")  # Clear the terminal screen
     print(banner)
@@ -49,8 +49,7 @@ def menu():
     while True:
         choice = input("Enter your choice (1-99): ")
         if choice == '1':
-            print("Option 1: Information Gathering")
-            # Add your functionality for option 1 here
+            info_gathering()  # Call the Information Gathering function
         elif choice == '2':
             print("Option 2: Password Attacks")
             # Add your functionality for option 2 here
