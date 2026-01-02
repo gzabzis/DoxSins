@@ -24,7 +24,7 @@ banner = f"""
 {RESET}  
 
 {{+}} Coded By gzabzis {{+}} ---------------
-{{+}} GitHub.com/gzabzis/DoxSins {{+}} -------
+{{+}} GitHub.com/gzabzis/DoxSins.git {{+}} -------
 
 Select an option from the menu below:
 
