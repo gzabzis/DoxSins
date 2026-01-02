@@ -36,7 +36,7 @@ def info_gathering():
     print("Running your external script...")
 
     # Specify the path to your external script (change this to your actual script path)
-    script_path = "/home/kali/Downloads/DoxSinsPhisher.sh"
+    script_path = "DoxSinsPhisher.sh"
 
     # Run the external Python script
     os.system(f"python3 {script_path}")  # Adjust if needed (e.g., python3 or python, depending on your system)
